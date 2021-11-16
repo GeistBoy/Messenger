@@ -1,0 +1,27 @@
+{
+  "name": "wechatylistner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export WECHATY_PUPPET=wechaty-puppet-wechat && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "js-md5": "^0.7.3",
+    "qrcode-terminal": "^0.12.0",
+    "ts-node": "^10.4.0",
+    "utf8": "^3.0.0",
+    "wechaty": "^1.0.6",
+    "wechaty-puppet": "^1.7.6",
+    "wechaty-puppet-wechat": "^1.0.1"
+  },
+  "devDependencies": {
+    "puppeteer": "^11.0.0"
+  }
+}
