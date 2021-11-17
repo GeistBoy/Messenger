@@ -8,15 +8,14 @@ const require = createRequire(import.meta.url);
 // QR code
 function onScan(qrcode, status) {
   console.log("onScan");
-  post();
-  // qrTerm.generate(qrcode, { small: true });
+  qrTerm.generate(qrcode, { small: true });
 
-  // const qrcodeImageUrl = [
-  //   "https://wechaty.js.org/qrcode/",
-  //   encodeURIComponent(qrcode),
-  // ].join("");
+  const qrcodeImageUrl = [
+    "https://wechaty.js.org/qrcode/",
+    encodeURIComponent(qrcode),
+  ].join("");
 
-  // console.log(qrcodeImageUrl);
+  console.log(qrcodeImageUrl);
 }
 
 // Login
